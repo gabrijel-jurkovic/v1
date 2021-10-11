@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+        rel="stylesheet"
+/>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <img
+                        src="images/MeetUp_logo.png"
+                        height="15"
+                        alt=""
+                        loading="lazy"
+                />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item d-none">
+                    <a class="nav-link" href="index.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="our_team.html">Our Team</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <!-- Notifications -->
+            <a
+                    class="text-reset me-3 dropdown-toggle hidden-arrow"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+            >
+                <i class="fas fa-bell"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+            <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuLink"
+            >
+                <li>
+                    <a class="dropdown-item" href="#">Some news</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Another news</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+            </ul>
+
+            <!-- Avatar -->
+            <a class="text-reset me-3" href="#">
+                <i class="fas fa-user-alt"></i>
+            </a>
+            <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuLink"
+            >
+                <li>
+                    <a class="dropdown-item" href="#">My profile</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+
+
+<section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+                <div class="card rounded-3 text-black">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="card-body p-md-5 mx-md-4">
+
+                                <div class="text-center">
+                                    <img class="login_logo" src="images/MeetUp_logo.png" alt="logo">
+
+                                </div>
+
+                                <form id="login_form">
+                                    <p>Please login to your account</p>
+
+                                    <div class="md-form md-outline">
+                                        <label for="email">E-mail</label><input
+                                            id="email"
+                                            class="form-control"
+                                            type="text"
+                                            placeholder="janez.novak@gmail.com"
+                                    />
+                                    </div>
+
+                                    <div class="md-form md-outline">
+                                        <label for="login_password">Password</label><input
+                                            id="login_password"
+                                            class="form-control"
+                                            type="password"
+                                            placeholder="Password"
+                                    />
+                                    </div>
+
+                                    <div class="text-center pt-1 mb-5 pb-1">
+                                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                                                type="button">Log in
+                                        </button>
+                                        <a class="text-muted" href="#">Forgot password?</a>
+                                    </div>
+
+                                    <div class="text-center row d-flex align-items-center justify-content-center pb-4">
+                                        <p class="mb-0 me-2">Don't have an account?</p>
+                                        <a class="text-muted" href="registration.html">Create new</a>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                <h4 class="mb-4">More than just events!</h4>
+                                <p class="small mb-0">Organise and sign up for events easier than ever before.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <img src="images/MeetUp_logo.png" class="login_logo"/>
+                <p>Here you can use rows and columns to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Useful links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="our_team.html">Our team</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" id="copyright">© 2021 Copyright:
+        <a href="index.html">MeetUp®</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+</body>
+</html>
