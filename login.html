@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         rel="stylesheet"
@@ -15,6 +14,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
         rel="stylesheet"
 />
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
 <link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8">
@@ -22,6 +26,7 @@
 
 </head>
 <body>
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Container wrapper -->
     <div class="container-fluid">
@@ -51,11 +56,8 @@
             </a>
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item d-none">
-                    <a class="nav-link" href="index.html">Dashboard</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html" >Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="events.html">Events</a>
@@ -103,7 +105,8 @@
             </ul>
 
             <!-- Avatar -->
-            <a class="text-reset me-3" href="#">
+
+            <a class="text-reset me-3" href="login.html">
                 <i class="fas fa-user-alt"></i>
             </a>
             <ul
@@ -125,10 +128,10 @@
     </div>
     <!-- Container wrapper -->
 </nav>
+<!-- Navbar -->
 
-
-<section class="h-100 gradient-form" style="background-color: #eee;">
-    <div class="container py-5 h-100">
+<section class="gradient-form" style="background-color: #eee;">
+    <div class="container py-5 px-sm-0">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-xl-10">
                 <div class="card rounded-3 text-black">
@@ -137,7 +140,7 @@
                             <div class="card-body p-md-5 mx-md-4">
 
                                 <div class="text-center">
-                                    <img class="login_logo" src="images/MeetUp_logo.png" alt="logo">
+                                    <img id="form_logo" class="login_logo" src="images/MeetUp_logo.png" alt="logo">
 
                                 </div>
 
@@ -163,10 +166,10 @@
                                     </div>
 
                                     <div class="text-center pt-1 mb-5 pb-1">
-                                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                                        <button id="login_btn" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
                                                 type="button">Log in
                                         </button>
-                                        <a class="text-muted" href="#">Forgot password?</a>
+                                        <a class="text-muted" href="forgotten_password.html">Forgot password?</a>
                                     </div>
 
                                     <div class="text-center row d-flex align-items-center justify-content-center pb-4">
@@ -180,7 +183,7 @@
                         </div>
                         <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                             <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                <h4 class="mb-4">More than just events!</h4>
+                                <h2 class="mb-4">More than just events!</h2>
                                 <p class="small mb-0">Organise and sign up for events easier than ever before.</p>
                             </div>
                         </div>

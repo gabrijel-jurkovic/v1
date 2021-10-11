@@ -20,6 +20,24 @@
         border-bottom-right-radius: .3rem;
     }
 }
+@media (max-width: 1000px){
+    form p,label,a{
+        font-size: 25px;
+    }
+    #login_btn{
+        font-size: large;
+    }
+
+    #form_logo{
+        width: 300px;
+    }
+    #signup_btn{
+        font-size: large;
+    }
+    #recover_pass{
+        font-size: large;
+    }
+}
 
 .login_logo{
     width: 185px;
@@ -35,5 +53,12 @@ form div + div{
 footer{
     background-color: #eee;
 }
+.info{
+    font-size: large;
+}
+
+
+
+
 
 
