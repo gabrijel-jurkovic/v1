@@ -1,0 +1,34 @@
+#naziv{
+    text-align: center;
+    font-size: 40px;
+}
+
+#viewport{
+    padding-left: 180px;
+}
+
+#loc{
+    text-align: center;
+}
+
+#mapa_id{
+    height: 230px;
+}
+
+#loci{
+    text-align: left;
+    padding-left: 250px;
+}
+#locid{
+    text-align: right;
+    padding-left: 100px;
+}
+
+#kreiraj{
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+#kreir {
+    float:right;
+}
