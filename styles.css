@@ -13,6 +13,9 @@
     .gradient-form {
         height: 100vh !important;
     }
+    #form_logo{
+        width: 100px;
+    }
 }
 @media (min-width: 769px) {
     .gradient-custom-2 {
@@ -22,21 +25,12 @@
 }
 @media (max-width: 1000px){
     form p,label,a{
-        font-size: 25px;
+        /*font-size: 20px;*/
     }
-    #login_btn{
-        font-size: large;
-    }
-
     #form_logo{
         width: 300px;
     }
-    #signup_btn{
-        font-size: large;
-    }
-    #recover_pass{
-        font-size: large;
-    }
+
 }
 
 .login_logo{
@@ -47,7 +41,6 @@
 
 form div + div{
     margin-top: 16px;
-
 }
 
 footer{
