@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.belo{
+  color:white;
+  padding-top: 390px;
+  text-align:center;
+}
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #C33764, #1D2671);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right,  #C33764, #1D2671);
+}
+#boja{
+  color: white;
+}
+
+#tabela{
+  margin-top: 60px;
+  
+  
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+canvas{
+  margin-top: 20px !important;
+}
+#barChart {
+  height: 500px !important;
+}
+#pieChart{
+  height: 400px !important;
+  width: 700px !important;
+}
+
+#desno{
+  float: right;
+  margin-right: 40px;
+}
+
+#levo {
+  margin-left: 40px;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #37474F;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+   /* fallback for old browsers */
+   background: #fccb90;
+
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: -webkit-linear-gradient(to right, #C33764, #1D2671);
+ 
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to right,  #C33764, #1D2671);
+}
+
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+
+#sidebar .nav{
+  
+}
+
+#sidebar .nav a{
+  background: none;
+  border-bottom: 1px solid #455A64;
+  color: #CFD8DC;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #ECEFF1;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+      display: none;
+  }
+  #viewport {
+    padding-left: 0px;
+  }
+  #scheduler{
+    height: 100px;
+  }
+}

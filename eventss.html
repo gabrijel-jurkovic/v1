@@ -19,10 +19,10 @@
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
 ></script>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylee.css">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Event information</title>
 
 </head>
 <body>
@@ -57,13 +57,13 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" >Home</a>
+                    <a class="nav-link"  href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="events.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="our_team.html">Our Team</a>
+                    <a class="nav-link"  href="our_team.html">Our Team</a>
                 </li>
             </ul>
             <!-- Left links -->
@@ -130,63 +130,63 @@
 </nav>
 <!-- Navbar -->
 
-<section class="gradient-form" style="background-color: #eee;">
-    <div class="py-5 px-sm-0">
+<section class="form" style="background-color: #eee;">
+    <div class="container py-5 px-sm-0">
         <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-sm-11 col-md-11 col-lg-11 col-xl-7">
+            <div class="col-xl-10">
                 <div class="card rounded-3 text-black">
-                    <div class="row g-0">
-                        <div class="col-lg-6">
-                            <div class="card-body p-md-5 mx-md-4">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="rounded-3">
 
-                                <div class="text-center">
-                                    <img id="form_logo" class="login_logo" src="images/MeetUp_logo.png" alt="logo">
+                    <div class="m-5">
+                        <h2>Great rock concert</h2>
 
-                                </div>
+                        <h5>Event type</h5>
+                        <p id="type">Concert</p>
 
-                                <form id="login_form">
-                                    <p>Please login to your account</p>
-
-                                    <div class="md-form md-outline">
-                                        <label for="email">E-mail</label><input
-                                            id="email"
-                                            class="form-control"
-                                            type="text"
-                                            placeholder="janez.novak@gmail.com"
-                                    />
-                                    </div>
-
-                                    <div class="md-form md-outline">
-                                        <label for="login_password">Password</label><input
-                                            id="login_password"
-                                            class="form-control"
-                                            type="password"
-                                            placeholder="Password"
-                                    />
-                                    </div>
-
-                                    <div class="text-center pt-1 mb-5 pb-1">
-                                        <button id="login_btn" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
-                                                type="button" onclick="location.href='myevents.html'">Log in
-                                        </button>
-                                        <a class="text-muted" href="forgotten_password.html">Forgot password?</a>
-                                    </div>
-
-                                    <div class="text-center row d-flex align-items-center justify-content-center pb-4">
-                                        <p class="mb-0 me-2">Don't have an account?</p>
-                                        <a class="text-muted" href="registration.html">Create new</a>
-                                    </div>
-
-                                </form>
-
-                            </div>
+                        <h5>Start</h5>
+                        <div class="row">
+                            <p id="date" class="col-2">05.12.2021</p>
+                            <p id="time" class="col-2">07:00 PM</p>
                         </div>
-                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                <h2 class="mb-4">More than just events!</h2>
-                                <p class="small mb-0">Organise and sign up for events easier than ever before.</p>
-                            </div>
+
+                        <h5>End</h5>
+                        <div class="row">
+                            <p id="date" class="col-2">05.12.2021</p>
+                            <p id="time" class="col-2">15:00 PM</p>
                         </div>
+
+                        <h5>Available tickets</h5>
+                        <p id="tiskets_sold">34</p>
+
+
+                        <h5>Description</h5>
+                        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada
+                            vitae
+                            ligula ac
+                            maximus. Cras ultrices fermentum mauris, quis ultrices nisl commodo porttitor. Pellentesque
+                            a elit eget augue semper tempor. Proin volutpat posuere dolor a tempor. Quisque ac arcu vel
+                            nisl gravida aliquet. Suspendisse potenti. Fusce facilisis fringilla risus, ut porttitor
+                            erat.</p>
+
+                        <h5>Timetable</h5>
+                        <p id="timetable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada
+                            vitae
+                            ligula ac
+                            maximus. Cras ultrices fermentum mauris, quis ultrices nisl commodo porttitor. Pellentesque
+                            a elit eget augue semper tempor. Proin volutpat posuere dolor a tempor. Quisque ac arcu vel
+                            nisl gravida aliquet. Suspendisse potenti. Fusce facilisis fringilla risus, ut porttitor
+                            erat.</p>
+                        <h5>Price</h5>
+                        <p id="price">10$</p>
+                        
+                        <div>
+                            <h5>Address</h5>
+                            <p id="address">Vecna pot 134, 1000 Ljubljana</p>
+                            <img  class="d-block w-100 img-responsive" src="https://conocedores.com/wp-content/uploads/2016/06/googlemapslogo.jpg">
+                        </div>
+
+                        <button type="button" class="gradient-custom-2 w-100 mt-5" id="boja">Buy now</button>
+                        
                     </div>
                 </div>
             </div>
@@ -198,58 +198,7 @@
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-
-        <!-- Grid row -->
-        <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
-
-                <!-- Content -->
-                <img src="images/MeetUp_logo.png" class="login_logo"/>
-                <p>Here you can use rows and columns to organize your footer content.</p>
-
-            </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Useful links</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="events.html">Events</a>
-                    </li>
-                    <li>
-                        <a href="our_team.html">Our team</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
+  
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3" id="copyright">© 2021 Copyright:
         <a href="index.html">MeetUp®</a>
