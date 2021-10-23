@@ -1,6 +1,6 @@
 #naziv{
     text-align: center;
-    font-size: 40px;
+    font-size: 37px;
 }
 
 #viewport{
@@ -31,4 +31,33 @@
 
 #kreir {
     float:right;
+}
+
+@media (max-width: 667px) {
+#naziv{
+    width: 100%;
+    margin-left: 0px;
+    float: left;
+    align-items: center;
+    display: flex;
+    max-width:100%;
+  }
+#viewport {
+    flex: 0 0 100%;
+    max-width: 90%;
+    padding: 5px;
+}
+#kreiraj{
+    margin-left: 0px;
+    float: left;
+    align-items: center;
+    display: flex;
+}
+
+ .col-md-4{
+    align-items: center;
+    display: flex;
+    max-width:100%;
+  }
+  
 }

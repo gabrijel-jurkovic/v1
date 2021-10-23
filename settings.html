@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meet.Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="SettingsStyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="stylee.css" rel="stylesheet">
+    <link href="SettingsStyle.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" ></script>
+
+</head>
+
+<body>
+    <nav class="gradient-custom-2 navbar">
+    <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+        <img
+                src="images/MeetUp_logo.png"
+                height="15"
+                alt=""
+                loading="lazy"
+        />
+    </a>
+    <div>
+        <ul class="nav">
+            <li>
+                <a href="myevents.html" id="na">
+                    <i class="zmdi zmdi-calendar"></i>
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html" id="na">
+                    <i class="zmdi zmdi-view-dashboard"></i>
+                </a>
+            </li>
+            <li>
+                <a href="create.html" id="na">
+                    <i class="zmdi zmdi-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="bookedevents.html" id="na">
+                    <i class="zmdi zmdi-calendar"></i>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html" id="na">
+                    <i class="zmdi zmdi-settings"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" id="na">
+                    <i class="zmdi zmdi-sign-in"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="viewport">
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <ul class="nav">
+            <li>
+                <a class="" href="index.html">
+                    <img
+                            src="images/MeetUp_logo.png"
+                            height="15"
+                            alt=""
+                            loading="lazy"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="myevents.html">
+                    <i class="zmdi zmdi-calendar"></i> My Events
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html">
+                    <i class="zmdi zmdi-view-dashboard"></i> Calendar
+                </a>
+            </li>
+            <li>
+                <a href="create.html">
+                    <i class="zmdi zmdi-plus"></i> Create Event
+                </a>
+            </li>
+
+            <li>
+                <a href="bookedevents.html">
+                    <i class="zmdi zmdi-calendar"></i> Booked Events
+                </a>
+            </li>
+            <li>
+                <a href="events.html">
+                    <i class="zmdi zmdi-search"></i> Search
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="zmdi zmdi-settings"></i> Settings
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="zmdi zmdi-sign-in"></i> LogOut
+                </a>
+            </li>
+        </ul>
+        <div class="belo" id="copyright">© 2021 Copyright:
+            <a href="index.html">MeetUp®</a>
+        </div>
+    </div>
+    <div id="setings">
+        <div class="top-navigation">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-pills collapse d-flex flex-row" id="pills" role="tablist">
+                        <li class="nav-item sett-nav" role="presentation">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#profileSettings" role="tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="far fa-user fa-lg"><span class="pill_text"> Profile</span></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item sett-nav" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" href="#loginSettings" role="tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fas fa-sign-in-alt fa-lg"><span class="pill_text"> Login</span></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item sett-nav" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" href="#paymentSettings" role="tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="far fa-credit-card fa-lg"><span class="pill_text"> Payment</span></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item sett-nav" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" href="#report" role="tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fas fa-ban fa-lg"><span class="pill_text"> Report</span></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="mainContainer">
+            <div class="row h-100">
+                <div class="col-md-12 tab-content">
+                    <!-- PROFILE SETTINGS TAB -->
+                    <div class="card settingsContent tab-pane active" id="profileSettings">
+                        <div class="card-header">
+                            <h4>YOUR PROFILE INFORMATION</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row mt-4 mb-5">
+                                    <div class="col-12 col-md-6">
+                                        <div class="imageHolder">
+                                            <img src="images/user-icon.png" alt="Icon" class="icon">
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit Icon</button>
+                                    </div>
+                                    <div class="col-sm">
+                                        <label for="ShortBio" id="bioLabel" >Share something about yourself</label> <br>
+                                        <textarea id="ShortBio"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-12 col-md-6">
+                                        <label for="Fname">First Name</label><br>
+                                        <input type="text" placeholder="First Name" id="Fname">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="Lname">Last Name</label><br>
+                                        <input type="text" placeholder="Last Name" id="Lname">
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-12">
+                                        <label for="Email">Your email</label> <br>
+                                        <input type="email" placeholder="Your email" id="Email">
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-12">
+                                        <label for="PhoneNum">PhoneNumber</label> <br>
+                                        <input type="tel" placeholder="xxx-xxx-xxx" id="PhoneNum">
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-12">
+                                        <label for="BirthDate">Date of birth</label> <br>
+                                        <input type="date" id="BirthDate">
+                                    </div>
+                                </div>
+
+                                <div class="row" >
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-primary btn-rounded"> Save changes</button>
+                                        <button type="button" class="btn btn-secondary btn-rounded"> Reset changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- LOGIN SETTINGS TAB -->
+                    <div class="card settingsContent tab-pane" id="loginSettings">
+                        <div class="card-header">
+                            <h4>YOUR LOGIN INFORMATION</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mt-4 mb-4">
+                                <form>
+                                    <h5>Username</h5>
+                                    <div class="row mt-2 mb-2">
+                                        <div class="col">
+                                            <label for="username">Your username:</label><br>
+                                            <input type="text" id="username" placeholder="User">
+                                        </div>
+                                        <div class="col text-end">
+                                            <br>
+                                            <button type="submit" class="btn btn-primary btn-rounded" >Change username</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr>
+                            </div>
+
+                            <div class="row mt-4 mb-4">
+                                <form>
+                                    <div class="row">
+                                        <h5>Password</h5>
+                                        <div class="col-12 col-md-6">
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col">
+                                                    <label for="oldPassword">Enter old password:</label><br>
+                                                    <input type="password" required id="oldPassword">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col">
+                                                    <label for="newPassword">Enter new password:</label><br>
+                                                    <input type="password" required id="newPassword"  pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col">
+                                                    <label for="confirmPassword">Confirm new password:</label><br>
+                                                    <input type="password" required id="confirmPassword"  pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-md-6">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="text-muted  passReq">Password requirements:</p>
+                                                    <ul class="text-muted">
+                                                        <li>Can't be the same ass old password</li>
+                                                        <li>Must contain at least 8 characters</li>
+                                                        <li>Must contain at least 1 special character</li>
+                                                        <li>Must contain at least 1 number</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-end">
+                                                <div class="col-12 text-end">
+                                                    <button type="submit" class="btn btn-primary btn-rounded" >Change password</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </form>
+                            </div>
+
+                            <div class="row align-items-center ">
+                                <div class="col d-grid align-items-center ">
+                                    <button type="button" class="btn btn-danger btn-rounded" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete account</button>
+                                </div>
+
+                                <div class="modal" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">YOU ARE ABOUT TO DELETE YOUR ACCOUNT</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Are you sure you want to delete your account? If you proceed your account will be lost forever. This action can not be undone.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PAYMENT SETTINGS TAB -->
+                    <div class="card settingsContent tab-pane" id="paymentSettings">
+                        <div class="card-header">
+                            <h4>YOUR PAYMENT INFORMATION</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="row mt-0 mb-4">
+                                <div class="col">
+                                    <div class="row mt-2 mb-2">
+                                        <div class="col">
+                                            <p>Payment methods:</p>
+                                            <p class="text-muted">No payment methods</p>
+                                            <!--
+                                            <select class="custom-select" multiple>
+                                                <option selected>No payment methods</option>
+                                            </select>
+                                            -->
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2 mb 2">
+                                        <div class="col-12 col-md-6">
+                                            <h5>Add payment method:</h5>
+                                            <button  class="btn btn-success custom-buttons btn-lg" data-bs-toggle="modal" id="creditCardButton" data-bs-target="#cardPaymentModal" ><i class="far fa-credit-card fa-2x"></i></button>
+                                            <button class="btn btn-success custom-buttons btn-lg" data-bs-toggle="modal" data-bs-target="#ethPaymentModal"><i class="fab fa-ethereum fa-2x"></i></button>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <h5>Remove payment method:</h5>
+                                            <button class="btn btn-danger custom-buttons"><i class="fas fa-minus-circle fa-2x"></i></button>
+                                        </div>
+
+                                        <div class="modal" id="cardPaymentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">ADD CREDIT CARD INFORMATION</h5>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="row mt-2 mb-2">
+                                                                <div class="col-12 col-md-6">
+                                                                    <label for="cardName">Name on Card</label>
+                                                                    <input type="text" required id="cardName" placeholder="John Doe">
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <label for="cardNumber">Credit card number</label>
+                                                                    <input type="text" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})? | (?:5[1-5][0-9]{2} | 3[47][0-9]{13} | 6(?:011|5[0-9]{2})[0-9]{12}  )$" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-2 mb-2">
+                                                                <div class="col-12 col-md-6">
+                                                                    <label for="cardExpDate">Expiration Date</label>
+                                                                    <input type="month" required id="cardExpDate">
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <label for="cardCVV">CVV <sup>(number on the back of your card)</sup></label>
+                                                                    <input type="text"  pattern="\d{3}\d{4}" required id="cardCVV" placeholder="XXX">
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="row mt-2 mb-2">
+                                                                <div class="col-12 col-md-12">
+                                                                    <label for="acceptedCards">Accepted Cards</label>
+                                                                    <div class="icon-container" id="acceptedCards">
+                                                                        <i class="fab fa-cc-visa fa-2x"></i>
+                                                                        <i class="fab fa-cc-mastercard fa-2x"></i>
+                                                                        <i class="fab fa-cc-discover fa-2x"></i>
+                                                                        <i class="fab fa-cc-amex fa-2x"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div class="row">
+                                                            <div class="col text-end">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                                <button type="submit" class="btn btn-primary">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="modal" id="ethPaymentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">ADD ETHEREUM WALLET </h5>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="row mt-2 mb-2">
+                                                                <div class="col-12">
+                                                                    <label for="ethName">Your wallet name:</label>
+                                                                    <input type="text" required id="ethName">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-2 mb-2">
+                                                                <div class="col-12">
+                                                                    <label for="ethAdr">Your wallet address:</label>
+                                                                    <input type="text" required id="ethAdr">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div class="row">
+                                                            <div class="col text-end">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                                <button type="submit" class="btn btn-primary">Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row mt-4 mb-4">
+                                <div class="col">
+                                    <p>Recent purchases:</p>
+                                    <p class="text-muted">No purchases yet</p>
+                                    <!--
+                                    <select class="custom-select" multiple>
+                                        <option selected>No payment methods</option>
+                                    </select>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card settingsContent tab-pane" id="report">
+                        <div class="card-header">
+                            <h4>REPORT AN EVENT OR USER</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <h5>REPORT USER</h5>
+                            <form>
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-12 col-md-10">
+                                        <div class="row mt-2 mb-2">
+                                            <div class="col">
+                                                <label for="reportUsername">Enter username:</label>
+                                                <input id="reportUsername" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2 mb-6">
+                                            <div class="col">
+                                                <label for="reportUsernameDetails">Enter some details:</label><br>
+                                                <textarea id="reportUsernameDetails"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-2 d-flex align-items-end">
+                                        <button type="submit" class="btn btn-danger">Report</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <hr>
+
+                            <h5>REPORT EVENT</h5>
+                            <form>
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-12 col-md-10">
+                                        <div class="row mt-2 mb-2">
+                                            <div class="col">
+                                                <label for="reportEvent">Enter link to the event:</label>
+                                                <input id="reportEvent" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2 mb-6">
+                                            <div class="col">
+                                                <label for="reportEventDetails">Enter some details:</label><br>
+                                                <textarea id="reportEventDetails"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-2 d-flex align-items-end">
+                                        <button type="submit" class="btn btn-danger">Report</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</html>
+

@@ -1,0 +1,163 @@
+/* General ---------------------------------------------------*/
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    height: 100%;
+    -webkit-box-sizing: content-box;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+textarea {
+    height: 80%;
+    width: 100%;
+    resize: none;
+}
+
+label {
+    color: midnightblue;
+}
+
+.btn {
+    box-shadow: 10px 10px 20px dimgrey;
+}
+
+.btn-primary {
+    background-color: #C33764;
+}
+
+.btn-secondary {
+    background-color: #1D2671;
+}
+
+.far {
+    margin-right: 2px;
+}
+
+
+/* Main content  ---------------------------------------------------*/
+#mainContainer {
+    padding: 2%;
+    height: 80%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    color: midnightblue;
+    height: 100%;
+}
+
+.settingsContent {
+    /*#e5e4e2*/
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0 2% 2% 0;
+}
+
+.settingsContent .card-header {
+    background-color: #525BA0;
+}
+
+
+/* Top pill menu ---------------------------------------------------*/
+
+.top-navigation {
+    padding-left: 2%;
+}
+
+.nav-link:hover {
+    box-shadow: none;
+    /* #1D2671 */
+    background: #525BA0;
+}
+
+a.active.nav-link{
+    background-color: #525BA0!important;
+}
+
+.nav-link {
+    box-shadow: 10px 10px 20px dimgrey;
+}
+
+
+
+/* Profile info --------------------------------------------------- */
+input {
+    width: 100%;
+}
+
+.imageHolder {
+    display: inline-block;;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: darkgray solid;
+    box-shadow: 10px 10px 20px dimgrey;
+}
+
+.icon {
+    width: auto;
+    height: 100%;
+    background-color: lightgray;
+}
+
+
+
+
+
+/* Login info  ---------------------------------------------------*/
+.passReq {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.custom-select {
+    width: 80%;
+}
+
+/* Payment info -----------------------------------------------------*/
+.custom-buttons {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+#creditCardButton {
+    padding-left: 12px;
+}
+
+/* MEDIA CHANGES  ---------------------------------------------------*/
+@media (max-width: 768px) {
+    .sett-nav {
+        width: 10%;
+        height: 10%;
+        margin-right: 10%;
+        padding: 2%;
+    }
+
+    .pill_text {
+        visibility: hidden;
+    }
+}
