@@ -65,6 +65,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="our_team.html">Our Team</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
             </ul>
             <!-- Left links -->
         </div>
@@ -98,11 +101,11 @@
 </nav>
 <!-- Navbar -->
 
-<section class="d-flex flex-column min-vh-100 px-3" style="background-color: #eee;">
+<section class="d-flex flex-column min-vh-100 px-3" style="background-color: #fff;">
     <div class="py-5 px-sm-0">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-lg-11 col-xl-6 col-sm-12 col-md-11">
-                <div class="card rounded-3 text-black">
+                <div class="card rounded-3 text-black shadow-2-strong">
                     <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="rounded-3">
 
                     <div class="m-3">
@@ -110,6 +113,9 @@
 
                         <h5>Event type</h5>
                         <p id="type">Concert</p>
+
+                        <h5>Organiser</h5>
+                        <p>IDJ videos</p>
 
                         <h5>Start</h5>
 
@@ -149,7 +155,44 @@
                                  src="https://conocedores.com/wp-content/uploads/2016/06/googlemapslogo.jpg">
                         </div>
 
-                        <button type="button" class="btn btn-success w-100 mt-5">Buy now</button>
+                        <div class="pt-3 col-12 ">
+                            <h5>Weather information</h5>
+                            <div class="row px-5 justify-content-between pt-3">
+
+                                <!--temperature-->
+                                <div class="col-12 py-3 col-md-4">
+                                    <div class="row">
+                                        <img class="img col-5 img-responsive" src="images/hot.png">
+                                        <p class="col-7 my-auto">25 C</p>
+                                    </div>
+                                </div>
+
+                                <!--clouds-->
+                                <div class="col-12 py-3 col-md-4">
+                                    <div class="row">
+                                        <img class="img col-5 img-responsive" src="images/sun.png">
+                                        <p class="col-7 my-auto">Sunny</p>
+                                    </div>
+                                </div>
+                                <!--wind-->
+                                <div class="col-12 py-3 col-md-4">
+                                    <div class="row">
+                                        <img class="img col-5 img-responsive" src="images/wind.png">
+                                        <p class="col-7 my-auto">13 km/h</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-success w-100 mt-5 gradient-custom-2">Buy now</button>
+
+                        <div class="text-center pt-3">
+                            <button type="button" class="btn btn-outline-danger btn-block fa-lg"
+                                    data-mdb-ripple-color="dark">
+                                Report
+                            </button>
+                        </div>
 
                     </div>
                 </div>

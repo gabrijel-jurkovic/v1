@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="styles.css.css">
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
 <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         rel="stylesheet"
@@ -21,174 +20,255 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
 ></script>
 <link rel="stylesheet" href="styles.css">
-
-<link rel="stylesheet" href="eventi.css">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Event information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Toggle button -->
-    <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#">
-        <img
-                src="images/MeetUp_logo.png"
-                height="15"
-                alt=""
-                loading="lazy"
-        />
-      </a>
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html" >Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="our_team.html">Our Team</a>
-        </li>
-      </ul>
-      <!-- Left links -->
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <img
+                        src="images/MeetUp_logo.png"
+                        height="15"
+                        alt=""
+                        loading="lazy"
+                />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="our_team.html">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+            <!-- Avatar -->
+
+            <a class="text-reset me-3" href="login.html">
+                <i class="fas fa-user-alt"></i>
+            </a>
+            <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuLink"
+            >
+                <li>
+                    <a class="dropdown-item" href="#">My profile</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Right elements -->
     </div>
-    <!-- Collapsible wrapper -->
-
-    <!-- Right elements -->
-    <div class="d-flex align-items-center">
-      <!-- Icon -->
-      <a class="text-reset me-3" href="#">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
-
-      <!-- Notifications -->
-      <a
-              class="text-reset me-3 dropdown-toggle hidden-arrow"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-      >
-        <i class="fas fa-bell"></i>
-        <span class="badge rounded-pill badge-notification bg-danger">1</span>
-      </a>
-      <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuLink"
-      >
-        <li>
-          <a class="dropdown-item" href="#">Some news</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Another news</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </li>
-      </ul>
-
-      <!-- Avatar -->
-      <a class="text-reset me-3" href="login.html">
-        <i class="fas fa-user-alt"></i>
-      </a>
-      <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuLink"
-      >
-        <li>
-          <a class="dropdown-item" href="#">My profile</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Settings</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Logout</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Right elements -->
-  </div>
-  <!-- Container wrapper -->
+    <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
-<div id="karte">
-<section class="container ">
-    <div class="row">
 
-      <article class="card gradient-custom-2">
-        <section class="date">
-          <time datetime="23th feb">
-            <span>05</span><span>dec</span>
-          </time>
-        </section>
-        <section class="card-cont">
-          <small>IDJ videos</small>
-          <h3>Great rock concert</h3>
-          <div class="even-date">
-           <i class="fa fa-calendar"></i>
-           <time>
-             <span>wednesday 05 december 2021</span>
-             <span>07:00pm to 15:00 am</span>
-           </time>
-          </div>
-          <div class="even-info">
-            <i class="fa fa-map-marker"></i>
-            <p>
-              Vecna pot 134, 1000 Ljubljana
-            </p>
-          </div>
-          <a href="../../eventss.html">BUY</a>
-        </section>
-      </article>
-
-      <article class="card gradient-custom-2">
-        <section class="date">
-          <time datetime="23th feb">
-            <span>23</span><span>feb</span>
-          </time>
-        </section>
-        <section class="card-cont">
-          <small>dj khaled</small>
-          <h3>corner obsest program</h3>
-          <div class="even-date">
-           <i class="fa fa-calendar"></i>
-           <time>
-             <span>wednesday 28 december 2014</span>
-             <span>08:55pm to 12:00 am</span>
-           </time>
-          </div>
-          <div class="even-info">
-            <i class="fa fa-map-marker"></i>
-            <p>
-              nexen square for people australia, sydney
-            </p>
-          </div>
-          <a href="#">BUY</a>
-        </section>
-      </article>
-      
-    </div>  
+<section class="d-flex flex-column pt-5" style="background-color: #fff;">
+    <div class="row d-flex justify-content-center">
+        <div class="col-10 col-md-8 col-lg-8 col-xl-5">
+            <div class="input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                       aria-describedby="search-addon"/>
+                <span class="input-group-text border-0" id="search-addon">
+                 <i class="fas fa-search"></i>
+            </span>
+            </div>
+        </div>
+    </div>
 </section>
-</div>
+
+<section class="d-flex flex-column min-vh-100 px-5" style="background-color: #fff;">
+    <div class="py-5">
+        <div class="row d-flex justify-content-center align-items-center text-center">
+            <div class="card rounded-3 text-black col-sm-10 col-md-12 col-lg-5 col-xl-4 m-2 shadow-2-strong">
+                <div class="m-3">
+                    <h2>Great rock concert</h2>
+                    <h5>Event type</h5>
+                    <p id="type">Concert</p>
+                    <h5>Start</h5>
+                    <div class="row justify-content-center">
+                        <p class="col-5">05.12.2021</p>
+                        <p class="col-5">07:00 PM</p>
+                    </div>
+
+                    <div class="col-12">
+                        <h5>Tickets sold</h5>
+                        <p id="tiskets_sold">34/100</p>
+                    </div>
+                    <a href="event_info.html">
+                        <button class="btn btn-primary col-12 gradient-custom-2">details</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card rounded-3 text-black col-sm-10 col-md-12 col-lg-5 col-xl-4 m-2 shadow-2-strong">
+                <div class="m-3">
+                    <h2>Great rock concert</h2>
+                    <h5>Event type</h5>
+                    <p>Concert</p>
+                    <h5>Start</h5>
+                    <div class="row justify-content-center">
+                        <p class="col-5">05.12.2021</p>
+                        <p class="col-5">07:00 PM</p>
+                    </div>
+
+                    <div class="col-12">
+                        <h5>Tickets sold</h5>
+                        <p>34/100</p>
+                    </div>
+                    <a href="event_info.html">
+                        <button class="btn btn-primary col-12 gradient-custom-2">details</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card rounded-3 text-black col-sm-10 col-md-12 col-lg-5 col-xl-4 m-2 shadow-2-strong">
+                <div class="m-3">
+                    <h2>Great rock concert</h2>
+                    <h5>Event type</h5>
+                    <p>Concert</p>
+                    <h5>Start</h5>
+                    <div class="row justify-content-center">
+                        <p class="col-5">05.12.2021</p>
+                        <p class="col-5">07:00 PM</p>
+                    </div>
+
+                    <div class="col-12">
+                        <h5>Tickets sold</h5>
+                        <p>34/100</p>
+                    </div>
+                    <a href="event_info.html">
+                        <button class="btn btn-primary col-12 gradient-custom-2">details</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card rounded-3 text-black col-sm-10 col-md-12 col-lg-5 col-xl-4 m-2 shadow-2-strong">
+                <div class="m-3">
+                    <h2>Great rock concert</h2>
+                    <h5>Event type</h5>
+                    <p>Concert</p>
+                    <h5>Start</h5>
+                    <div class="row justify-content-center">
+                        <p class="col-5">05.12.2021</p>
+                        <p class="col-5">07:00 PM</p>
+                    </div>
+
+                    <div class="col-12">
+                        <h5>Tickets sold</h5>
+                        <p>34/100</p>
+                    </div>
+                    <a href="event_info.html">
+                        <button class="btn btn-primary col-12 gradient-custom-2">details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <img src="images/MeetUp_logo.png" class="login_logo"/>
+                <p>Here you can use rows and columns to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Useful links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="our_team.html">Our team</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" id="copyright">© 2021 Copyright:
+        <a href="index.html">MeetUp®</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 </body>
