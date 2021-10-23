@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         rel="stylesheet"
@@ -15,13 +14,19 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
         rel="stylesheet"
 />
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
 <link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8" name=”viewport” content=”width=device-width, initial-scale=1.0"">
     <title>Registration</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Container wrapper -->
     <div class="container-fluid">
@@ -51,9 +56,6 @@
             </a>
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item d-none">
-                    <a class="nav-link" href="index.html">Dashboard</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -70,39 +72,8 @@
 
         <!-- Right elements -->
         <div class="d-flex align-items-center">
-            <!-- Icon -->
-            <a class="text-reset me-3" href="#">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-
-            <!-- Notifications -->
-            <a
-                    class="text-reset me-3 dropdown-toggle hidden-arrow"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-mdb-toggle="dropdown"
-                    aria-expanded="false"
-            >
-                <i class="fas fa-bell"></i>
-                <span class="badge rounded-pill badge-notification bg-danger">1</span>
-            </a>
-            <ul
-                    class="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="navbarDropdownMenuLink"
-            >
-                <li>
-                    <a class="dropdown-item" href="#">Some news</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#">Another news</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-            </ul>
-
             <!-- Avatar -->
+
             <a class="text-reset me-3" href="login.html">
                 <i class="fas fa-user-alt"></i>
             </a>
@@ -125,12 +96,13 @@
     </div>
     <!-- Container wrapper -->
 </nav>
+<!-- Navbar -->
 
 
-<section class="h-100 gradient-form mx-0 px-0" style="background-color: #eee;">
-    <div class="container  h-75 px-0 justify-content-center w-100 col-lg-12 col-sm-12">
-        <div class="row d-flex justify-content-center align-items-center h-100 col-12">
-            <div class="col-sm-12 mx-5 col-md-12 col-lg-6">
+<section class="min-vh-100 gradient-form px-3 pt-5" style="background-color: #eee;">
+    <div class="h-75 px-0 justify-content-center w-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-sm-11 col-md-11 col-lg-11 col-xl-5 mx-5">
                 <div class="card rounded-3 text-black">
 
                         <div>
@@ -156,6 +128,16 @@
                                                 placeholder="Novak"
                                         />
                                         </div>
+                                    </div>
+
+                                    <!-- Username input -->
+                                    <div class="md-form md-outline">
+                                        <label for="username">Username</label><input
+                                            id="username"
+                                            class="form-control"
+                                            type="text"
+                                            placeholder="LepaAfna"
+                                    />
                                     </div>
 
                                     <!-- Email input -->
@@ -192,7 +174,7 @@
                                     </div>
 
                                     <!-- Submit button -->
-                                    <button id="signup_btn" type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+                                    <button id="signup_btn" type="submit" class="btn btn-primary btn-block mb-4 gradient-custom-2">Sign up</button>
 
                                 </form>
 
@@ -227,7 +209,7 @@
             </div>
             <!-- Grid column -->
 
-            <hr class="clearfix w-100 d-md-none pb-3">
+            <hr class="clearfix w-100 d-md-none">
 
             <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3">
