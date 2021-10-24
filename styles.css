@@ -84,7 +84,3 @@ footer{
       border: 1px solid rgb(0, 0, 0);
       box-shadow: 1px 2px;
   }
-
-  p:hover{
-    background-color: rgb(197, 221, 241);
-  }
